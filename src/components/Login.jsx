@@ -11,7 +11,7 @@ const Login  = () => {
 let {AuthUser}=useContext(Context);
  
   const handleLogin = (e) => {
-    e.preventDefault(); // Prevents the form from reloading the page
+    e.preventDefault();  
     localStorage.setItem('userDetail',JSON.stringify({name:username, password:password}));
     AuthUser();
 navigate('/add-todo');  
